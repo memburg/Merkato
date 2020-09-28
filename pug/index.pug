@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Merkato | A multi-alphabet Esperanto converter
+        link(
+        rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css",
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I",
+        crossorigin="anonymous")
+        link(rel="stylesheet", href="css/style.css")
+    body
+        nav.navbar.navbar-light.bg-light
+            .container-fluid
+                a.navbar-brand
+                    img(
+                    src="https://v5.getbootstrap.com/docs/5.0/assets/brand/bootstrap-solid.svg",
+                    width="30" height="30",
+                    class="d-inline-block align-top mr-2",
+                    alt="",
+                    loading="lazy")
+                    | Merkato
+
+        .container-fluid
+            .row
+                .col-6.pt-3
+                    select(name='select').form-select.simple-box#source-option
+                        option(value="Esperanto", selected) Esperanto
+                        option(value="Cyrillic") Cyrillic
+                        option(value="Georgian") Georgian
+                        option(value="X", disabled) X System
+                        option(value="H", disabled) H System
+                
+                .col-6.pt-3
+                    select(name='select').form-select.simple-box#result-option
+                        option(value="Esperanto") Esperanto
+                        option(value="Cyrillic", selected) Cyrillic
+                        option(value="Georgian") Georgian
+                        option(value="X", disabled) X System
+                        option(value="H", disabled) H System
+
+        .container-fluid
+            .row
+                .col-sm-12.col-md-6.pt-3
+                    textarea(spellcheck="false").form-control.simple-box.source#source
+                
+                .col-sm-12.col-md-6.pt-3
+                    textarea(readonly).form-control.simple-box.result#result Jot something down
+
+        script(src="javascript/app.js")

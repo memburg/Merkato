@@ -1,0 +1,16 @@
+{
+  "name": "universala",
+  "version": "1.0.0",
+  "description": "A multi-alphabet esperanto converter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "esperanto",
+    "generator",
+    "multi-alphabet"
+  ],
+  "author": "Ramb Memburg",
+  "license": "MIT"
+}
