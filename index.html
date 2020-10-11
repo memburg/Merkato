@@ -1,1 +1,46 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Merkato | A multi-alphabet Esperanto converter</title><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"/><link rel="stylesheet" href="css/style.css"/></head><body> <nav class="navbar navbar-light bg-light"><div class="container-fluid"><a class="navbar-brand"><img class="d-inline-block align-top mr-2" src="https://v5.getbootstrap.com/docs/5.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" loading="lazy"/>Merkato</a></div> </nav><div class="container-fluid"><div class="row"><div class="col-6 pt-3"> <select class="form-select simple-box" name="select" id="source-option"><option value="Esperanto" selected="selected">Esperanto</option><option value="Cyrillic">Cyrillic</option><option value="Georgian">Georgian</option><option value="X" disabled="disabled">X System</option><option value="H" disabled="disabled">H System</option> </select></div><div class="col-6 pt-3"> <select class="form-select simple-box" name="select" id="result-option"><option value="Esperanto">Esperanto</option><option value="Cyrillic" selected="selected">Cyrillic</option><option value="Georgian">Georgian</option><option value="X" disabled="disabled">X System</option><option value="H" disabled="disabled">H System</option> </select></div></div></div><div class="container-fluid"><div class="row"><div class="col-sm-12 col-md-6 pt-3"><textarea class="form-control simple-box source" spellcheck="false" id="source"></textarea></div><div class="col-sm-12 col-md-6 pt-3"><textarea class="form-control simple-box result" readonly="readonly" id="result">Jot something down</textarea></div></div></div> <script src="javascript/app.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Merkato | A multi-alphabet Esperanto converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid"><a class="navbar-brand"><img class="d-inline-block align-top mr-2" src="https://v5.getbootstrap.com/docs/5.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" loading="lazy"/>Merkato</a></div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 pt-3">
+          <select class="form-select simple-box" name="select" id="source-option">
+            <option value="Esperanto" selected="selected">Esperanto</option>
+            <option value="Cyrillic">Cyrillic</option>
+            <option value="Georgian">Georgian</option>
+            <option value="X">X System</option>
+          </select>
+        </div>
+        <div class="col-6 pt-3">
+          <select class="form-select simple-box" name="select" id="result-option">
+            <option value="Esperanto">Esperanto</option>
+            <option value="Cyrillic" selected="selected">Cyrillic</option>
+            <option value="Georgian">Georgian</option>
+            <option value="X">X System</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 pt-3">
+          <textarea class="form-control simple-box source" spellcheck="false" id="source"></textarea>
+        </div>
+        <div class="col-sm-12 col-md-6 pt-3">
+          <textarea class="form-control simple-box result" readonly="readonly" id="result">Jot something down</textarea>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/app.js"></script>
+  </body>
+</html>
